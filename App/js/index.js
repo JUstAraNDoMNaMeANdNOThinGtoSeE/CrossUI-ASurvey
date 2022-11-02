@@ -47,7 +47,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("2.0833333333333335em")
                 .setImageClass("fa fa-lg fa-user-plus")
                 .setIconFontSize("3em")
-                );
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.Icon")
@@ -56,196 +56,224 @@ xui.Class('App', 'xui.Module',{
                 .setTop("2.0833333333333335em")
                 .setImageClass("fa fa-lg fa-users")
                 .setIconFontSize("3em")
-                );
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label106")
                 .setLeft("6.666666666666667em")
                 .setTop("3.6875em")
-                .setCaption("Owenr")
-                );
+                .setWidth("3.8em")
+                .setCaption("User")
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label107")
                 .setLeft("24.3125em")
                 .setTop("3.6875em")
-                .setCaption("Participants")
-                );
+                .setCaption("Server")
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label10")
                 .setLeft("9.375em")
                 .setTop("8.6875em")
-                .setCaption("Send to participants")
-                );
+                .setCaption("   C:\\Windows")
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.rectComb")
                 .setHost(host,"xui_svg_rectcomb1")
                 .setSvgTag("FlowChart:Process")
                 .setAttr({
-                    "KEY":{
-                        "x":14,
-                        "y":140,
-                        "width":130,
-                        "height":40,
-                        "fill":"90-#FF9A9A:0-#FF4040:50-#FF6767:100",
-                        "stroke":"#004A7F",
-                        "cursor":"pointer"
+                    "KEY" : {
+                        "x" : 14,
+                        "y" : 140,
+                        "width" : 130,
+                        "height" : 40,
+                        "fill" : "90-#FF9A9A:0-#FF4040:50-#FF6767:100",
+                        "stroke" : "#004A7F",
+                        "cursor" : "pointer"
                     },
-                    "TEXT":{
-                        "text":"Create a servey",
-                        "font-size":"14px",
-                        "fill":"#fff",
-                        "font-weight":"bold",
-                        "cursor":"pointer"
+                    "TEXT" : {
+                        "text" : "Scanning system...",
+                        "font-size" : "14px",
+                        "fill" : "#fff",
+                        "font-weight" : "bold",
+                        "cursor" : "pointer"
                     }
                 })
-                .onClick([{
-                    "desc":"Open",
-                    "type":"page",
-                    "target":"App.Frame",
-                    "args":[{
-                        "ipage":"post",
-                        "tab":"post"
-                    }],
-                    "method":"open",
-                    "event":1
-                }])
-                );
+                .onClick([
+                    {
+                        "desc" : "Open",
+                        "type" : "page",
+                        "target" : "App.Frame",
+                        "args" : [
+                            {
+                                "ipage" : "post",
+                                "tab" : "post"
+                            }
+                        ],
+                        "method" : "open",
+                        "event" : 1
+                    }
+                ])
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.connector")
                 .setHost(host,"xui_svg_connector1")
                 .setSvgTag("Connectors:Straight")
                 .setAttr({
-                    "KEY":{
-                        "path":"M,144,160L,310,160",
-                        "fill":"none",
-                        "stroke":"#004A7F",
-                        "stroke-width":2,
-                        "arrow-start":"oval-midium-midium",
-                        "arrow-end":"classic-wide-long"
+                    "KEY" : {
+                        "path" : "M,144,160L,310,160",
+                        "fill" : "none",
+                        "stroke" : "#004A7F",
+                        "stroke-width" : 2,
+                        "arrow-start" : "oval-midium-midium",
+                        "arrow-end" : "classic-wide-long"
                     },
-                    "BG":{
-                        "fill":"none",
-                        "stroke":"#fff",
-                        "stroke-width":4
+                    "BG" : {
+                        "fill" : "none",
+                        "stroke" : "#fff",
+                        "stroke-width" : 4
                     }
                 })
                 .setFromObj("xui_svg_rectcomb1")
                 .setFromPoint("right")
                 .setToObj("xui_svg_rectcomb3")
                 .setToPoint("left")
-                );
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.rectComb")
                 .setHost(host,"xui_svg_rectcomb3")
                 .setSvgTag("FlowChart:Process")
                 .setAttr({
-                    "KEY":{
-                        "x":310,
-                        "y":140,
-                        "width":120,
-                        "height":40,
-                        "fill":"90-#FF9A9A:0-#FF4040:50-#FF6767:100",
-                        "stroke":"#004A7F",
-                        "cursor":"pointer"
+                    "KEY" : {
+                        "x" : 310,
+                        "y" : 140,
+                        "width" : 120,
+                        "height" : 40,
+                        "fill" : "90-#FF9A9A:0-#FF4040:50-#FF6767:100",
+                        "stroke" : "#004A7F",
+                        "cursor" : "pointer"
                     },
-                    "TEXT":{
-                        "text":"Open it",
-                        "font-size":"14px",
-                        "fill":"#fff",
-                        "font-weight":"bold",
-                        "cursor":"pointer"
+                    "TEXT" : {
+                        "text" : "1 virus found",
+                        "font-size" : "14px",
+                        "fill" : "#fff",
+                        "font-weight" : "bold",
+                        "cursor" : "pointer"
                     }
                 })
-                .onClick([{
-                    "desc":"Action 1",
-                    "type":"page",
-                    "target":"App.Frame",
-                    "args":[{
-                        "ipage":"receive",
-                        "tab":"receive"
-                    }],
-                    "method":"open",
-                    "event":1
-                }])
-                );
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.Frame",
+                        "args" : [
+                            {
+                                "ipage" : "receive",
+                                "tab" : "receive"
+                            }
+                        ],
+                        "method" : "open",
+                        "event" : 1
+                    }
+                ])
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.path")
                 .setHost(host,"xui_svg_path1")
                 .setSvgTag("Shapes:Line")
                 .setAttr({
-                    "path":"M,230,5L,230,340",
-                    "stroke":"#004A7F",
-                    "fill":"#ffffff",
-                    "stroke-dasharray":"-."
+                    "path" : "M,230,5L,230,340",
+                    "stroke" : "#004A7F",
+                    "fill" : "#ffffff",
+                    "stroke-dasharray" : "-."
                 })
-                );
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.rectComb")
                 .setHost(host,"xui_svg_rectcomb61")
                 .setSvgTag("FlowChart:Process")
                 .setAttr({
-                    "KEY":{
-                        "x":310,
-                        "y":260,
-                        "width":120,
-                        "height":40,
-                        "fill":"#BA55D3",
-                        "stroke":"#004A7F"
+                    "KEY" : {
+                        "x" : 310,
+                        "y" : 260,
+                        "width" : 120,
+                        "height" : 40,
+                        "fill" : "#BA55D3",
+                        "stroke" : "#004A7F"
                     },
-                    "TEXT":{
-                        "text":"Reply",
-                        "font-size":"14px",
-                        "fill":"#fff",
-                        "font-weight":"bold"
+                    "TEXT" : {
+                        "text" : "Remove virus\n(Left click)",
+                        "font-size" : "14px",
+                        "fill" : "#fff",
+                        "font-weight" : "bold"
                     }
                 })
                 .setShadow(false)
-                );
+            );
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.connector")
                 .setHost(host,"xui_svg_connector107")
                 .setSvgTag("Connectors:Straight")
                 .setAttr({
-                    "KEY":{
-                        "path":"M,370,180L,370,260",
-                        "fill":"none",
-                        "stroke":"#004A7F",
-                        "stroke-width":2,
-                        "arrow-start":"oval-midium-midium",
-                        "arrow-end":"classic-wide-long"
+                    "KEY" : {
+                        "path" : "M,370,180L,370,260",
+                        "fill" : "none",
+                        "stroke" : "#004A7F",
+                        "stroke-width" : 2,
+                        "arrow-start" : "oval-midium-midium",
+                        "arrow-end" : "classic-wide-long"
                     },
-                    "BG":{
-                        "fill":"none",
-                        "stroke":"#fff",
-                        "stroke-width":4
+                    "BG" : {
+                        "fill" : "none",
+                        "stroke" : "#fff",
+                        "stroke-width" : 4
                     }
                 })
                 .setFromObj("xui_svg_rectcomb3")
                 .setFromPoint("bottom")
                 .setToObj("xui_svg_rectcomb61")
                 .setToPoint("top")
-                );
+            );
+            
+            host.xui_ui_svgpaper1.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput73")
+                .setLeft("6.866666666666666em")
+                .setTop("21.266666666666666em")
+                .setWidth("20em")
+                .setLabelSize("8em")
+                .setLabelCaption("Total scaned")
+                .setType("counter")
+                .setValue(10)
+            );
+            
+            host.xui_ui_svgpaper1.append(
+                xui.create("xui.UI.ProgressBar")
+                .setHost(host,"xui_ui_progressbar2")
+                .setLeft("6.866666666666666em")
+                .setTop("23.266666666666666em")
+            );
             
             append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label144")
                 .setLeft("10.5em")
                 .setTop("2.6666666666666665em")
-                .setCaption("Survey Prototype")
+                .setCaption("Anti-virus 2022")
                 .setCustomStyle({
-                    "KEY":{
-                        "font-size":"1.25em"
+                    "KEY" : {
+                        "font-size" : "1.25em"
                     }
                 })
             );
